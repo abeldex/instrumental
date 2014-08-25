@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/flat.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="instrumental_wbforrms.Defaultt" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
+        <div class="col-lg-12">
+            <form runat="server">
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </form>
+        </div>
                   <div class="col-lg-3">
                       <!--widget start-->
                       <aside class="profile-nav alt green-border">

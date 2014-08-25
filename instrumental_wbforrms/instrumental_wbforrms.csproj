@@ -49,6 +49,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\BasicDatePicker_1_4_3\BasicFrame.WebControls.BasicDatePicker.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -1739,6 +1742,7 @@
     <Content Include="Images\8pro.png" />
     <Content Include="Images\delete.png" />
     <Content Include="Images\step.png" />
+    <Content Include="iniciar_sesion.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
@@ -2346,6 +2350,13 @@
     <Compile Include="flat_page.aspx.designer.cs">
       <DependentUpon>flat_page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="iniciar_sesion.aspx.cs">
+      <DependentUpon>iniciar_sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iniciar_sesion.aspx.designer.cs">
+      <DependentUpon>iniciar_sesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2492,6 +2503,12 @@
     <Compile Include="Default1.aspx.designer.cs">
       <DependentUpon>Default1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SolicitudPA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolicitudPA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SolicitudPP.aspx.cs">
       <DependentUpon>SolicitudPP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2552,6 +2569,15 @@
       <Project>{5ede85b1-806d-42c0-8c7b-28614739fd1c}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SolicitudPA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SolicitudPA.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

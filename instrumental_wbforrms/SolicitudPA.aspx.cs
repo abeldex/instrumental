@@ -196,7 +196,7 @@ namespace instrumental_wbforrms
             {
                 AccesoLogica negocio = new AccesoLogica();
                 negocio.EliminarSolicitud(int.Parse(Label1.Text));
-                Response.Redirect("http://facite/instrumental/");
+                Response.Redirect("http://148.227.28.3/instrumental/");
             }
             catch (Exception er)
             {
@@ -231,20 +231,20 @@ namespace instrumental_wbforrms
             var MyFontNaranja = FontFactory.GetFont("Calibri", 11, naranja);
             var MyFontVerde = FontFactory.GetFont("Calibri", 13, verde);
             var MyFontNormal = FontFactory.GetFont("Calibri", 10, BaseColor.DARK_GRAY);
-            string url = "http://facite/instrumental/Content/themes/AdminTemplate/img/logouasderecha.png";
+            string url = "http://148.227.28.3/instrumental/Content/themes/AdminTemplate/img/logouasderecha.png";
             iTextSharp.text.Image logouasderecha = iTextSharp.text.Image.GetInstance(new Uri(url));
             logouasderecha.SetAbsolutePosition(doc.PageSize.Width - 25f - 72f, doc.PageSize.Height - 1f - 60f);
             logouasderecha.ScaleAbsoluteWidth(80);
             logouasderecha.ScaleAbsoluteHeight(42);
-            iTextSharp.text.Image logocentro = iTextSharp.text.Image.GetInstance(new Uri("http://facite/instrumental/Content/themes/AdminTemplate/img/Notebook.png"));
+            iTextSharp.text.Image logocentro = iTextSharp.text.Image.GetInstance(new Uri("http://148.227.28.3/instrumental/Content/themes/AdminTemplate/img/Notebook.png"));
             logocentro.SetAbsolutePosition(doc.PageSize.Width - 400f - 72f, doc.PageSize.Height - 1f - 70f);
             logocentro.ScaleAbsoluteWidth(355);
             logocentro.ScaleAbsoluteHeight(59);
-            iTextSharp.text.Image logofacite = iTextSharp.text.Image.GetInstance(new Uri("http://facite/instrumental/Content/themes/AdminTemplate/img/logo_b.png"));
+            iTextSharp.text.Image logofacite = iTextSharp.text.Image.GetInstance(new Uri("http://148.227.28.3/instrumental/Content/themes/AdminTemplate/img/logo_b.png"));
             logofacite.SetAbsolutePosition(doc.PageSize.Width - 470f - 72f, doc.PageSize.Height - 1f - 70f);
             logofacite.ScaleAbsoluteWidth(52);
             logofacite.ScaleAbsoluteHeight(52);
-            iTextSharp.text.Image logoInstrumento = iTextSharp.text.Image.GetInstance(new Uri("http://facite/instrumental/Content/themes/AdminTemplate/img/TRIPE.png"));
+            iTextSharp.text.Image logoInstrumento = iTextSharp.text.Image.GetInstance(new Uri("http://148.227.28.3/instrumental/Content/themes/AdminTemplate/img/TRIPE.png"));
             logoInstrumento.SetAbsolutePosition(doc.PageSize.Width - 520f - 72f, doc.PageSize.Height - 1f - 70f);
             logoInstrumento.ScaleAbsoluteWidth(29);
             logoInstrumento.ScaleAbsoluteHeight(60);

@@ -4395,31 +4395,23 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
 
 .lock-screen {
     background:#02bac6 url("../img/lock-bg.jpg");
-    background-size: cover;
+    background-size:contain;
     background-repeat: repeat;
 }
 
 .lock-wrapper {
-    margin: 10% auto;
-    max-width: 330px;
+    margin: 1% auto;
+    max-width: 380px;
 }
 
 .lock-box {
-    background: rgba(255,255,255,.3);
+    background:  rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     position: relative;
 }
 
-.lock-wrapper img {
-    position: absolute;
-    left: 40%;
-    top: -40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border: 5px solid #fff;
-}
 
 .lock-wrapper h1 {
     text-align: center;
@@ -4432,26 +4424,26 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
 .lock-wrapper .locked {
     margin-bottom: 20px;
     display: inline-block;
-    color: #026f7a;
+    color: #FF6C60;
 }
 
 .btn-lock,.btn-lock:hover {
-    background: #02b5c2;
+    background: #FF6C60;
     color: #fff;
 }
 
 .lock-input {
     width: 83%;
     border: none;
+    color:#FF6C60;
     float: left;
     margin-right: 3px;
 }
 
 #time {
     width: 100%;
-    color: #fff;
+    color: #FF6C60;
     font-size: 60px;
-    margin-bottom: 80px;
     display: inline-block;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
